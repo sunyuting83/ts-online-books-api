@@ -14,3 +14,4 @@ selenium-debug.log
 *.njsproj
 *.sln
 url.text
+yarn.lock
