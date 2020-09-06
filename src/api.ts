@@ -445,12 +445,12 @@ const readJson = (data = '') => {
 
 // make book id
 const makeBookId = (url = ''):number => {
-  return Number(url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.')))
+  return Number(url.substring(url.lastIndexOf('_') + 1, url.lastIndexOf('/')))
 }
 
 // make last book id
 const makeLastId = (url = ''):number => {
-  return Number(url.substring(url.lastIndexOf('/') + 1, url.lastIndexOf('.')))
+  return Number(url.substring(url.lastIndexOf('_') + 1, url.lastIndexOf('/')))
 }
 
 const Img2Base64 = (url = '', bookid = 0) => {
